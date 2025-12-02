@@ -1,0 +1,150 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.navbar {
+  background: linear-gradient(to right, #0f766e, #14b8a6);
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-brand {
+  font-size: 24px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  font-size: 16px;
+  color: #fff;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: #ccfbf1;
+}
+
+.hero {
+  background-image: url('pictures/pharmacy.jpeg');
+  background-size: cover;
+  background-position: center;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+}
+
+.hero-content {
+  background-color: rgba(20, 184, 166, 0.6);
+  padding: 40px;
+  border-radius: 20px;
+  backdrop-filter: blur(5px);
+  width: 60%;
+}
+
+.hero-btn {
+  background: #fff;
+  padding: 12px 25px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #0f766e;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.hero-btn:hover {
+  background: #ccfbf1;
+  transition: 0.3s;
+}
+
+.page-section {
+  padding: 60px 40px;
+  background-color: #f0fdfa;
+  background-image: url('pictures/pattern-bg.jpeg');
+  background-size: cover;
+  background-position: bottom;
+}
+
+.service-cards, .product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding-top: 20px;
+}
+
+.service-card, .product-item {
+  background: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.product-item img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.product-list {
+  list-style: none;
+  padding: 0;
+  font-size: 18px;
+  text-align: center;
+  color: #0f766e;
+  font-weight: 500;
+  margin-top: 20px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 50%;
+  margin: auto;
+}
+
+.contact-form input, .contact-form textarea {
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px solid #14b8a6;
+  font-size: 16px;
+}
+
+.contact-form button {
+  padding: 15px;
+  border-radius: 10px;
+  border: none;
+  font-size: 16px;
+  font-weight: 600;
+  background: linear-gradient(to right, #0f766e, #14b8a6);
+  color: #fff;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background: linear-gradient(to left, #0f766e, #14b8a6);
+  transition: 0.3s;
+}
+
+footer {
+  background-color: #0f766e;
+  padding: 20px;
+  text-align: center;
+  color: #fff;
+}
